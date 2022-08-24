@@ -1,0 +1,36 @@
+h4{
+        background: linear-gradient(to right, #b09c80, #000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: "Dancing Script rev=1" ;
+        
+        font-size: 14px;
+        text-align: center;
+    
+
+}
+.img{
+    width: 330px !important;
+    height: 150px !important;
+}
+.myform{
+    background-image: linear-gradien(to left,#2d00f7,#ff0291);
+    box-shadow: 10px 5px 5px #836953;
+    border-radius: 1%;
+}
+
+.logo{
+       width: 100px;
+ }
+body{
+    text-align: center;
+   
+}
+
+#pic{
+    width:1200px;
+    
+    
+}
+
+
