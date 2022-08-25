@@ -1,10 +1,9 @@
 h4{
-        background: linear-gradient(to right, #b09c80, #000);
+        background: linear-gradient(to right, #3cb6c9, #fff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: "Dancing Script rev=1" ;
-        
-        font-size: 14px;
+       font-size: 14px;
         text-align: center;
     
 
@@ -15,8 +14,7 @@ h4{
 }
 .myform{
     background-image: linear-gradien(to left,#2d00f7,#ff0291);
-    box-shadow: 10px 5px 5px #836953;
-    border-radius: 1%;
+    box-shadow: 10px 5px 5px #021333 ;
 }
 
 .logo{
@@ -24,13 +22,81 @@ h4{
  }
 body{
     text-align: center;
+ 
    
 }
 
 #pic{
-    width:1200px;
     
+    max-width: 100%;
+    height: auto ;
+} 
+
+.inspiration{
+    justify-content:space-between;
+}
+.col-4{
+    font-family: monospace;
+}
+#navbar{
+    background-color: #021333 !important;
+    text-emphasis-color: white !important;
+}
+body {
+    margin: 0;
+    font-family:monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 30px;
+    text-align:center;
+    align-content: center !important;
+}
+a{
+    color: #fff !important;
+}
+.txt{
+    font-family: Didot, serif;
+    color:#021333;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    text-align:center !important;
+    font-size: 14px;
+    
+
+}
+.col-4{
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center !important;
+    text-align: center;
     
 }
-
-
+.row{
+    justify-content: space-between;
+}
+.form__modal {
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    margin: 60px auto 80px;
+    max-width: 510px;
+}
+.form__modal {
+    margin: 15px auto 35px;
+}
+p {
+    margin: 0 0 10px;
+    font-family:Gill Sans, sans-serif
+}
+.spc{
+    color: #0a96a0  !important;
+    font-family:Gill Sans, sans-serif
+}
+.myspace{
+    text-align: center;
+    font-family : Arial Narrow, sans-serif;
+}

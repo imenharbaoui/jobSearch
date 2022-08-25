@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="C:\Users\IMEN\Desktop\jobSearch\css\condidat.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <a class="navbar-brand" href="#nav-link"> 
+                <img class="logo" src="C:\Users\IMEN\Desktop\jobSearch\image\dream job.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    emploi par ville 
+                  </a>
+                  
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/cities/jobs-in-tunis/">emploi à Tunis</a>
+                    
+                    <a class="dropdown-item" href="/cities/jobs-in-sfax/">emploi à Sfax </a>
+                    <a class="dropdown-item" href="/cities/jobs-in-monastir/"> emploi à Monastir</a>
+                    <a class="dropdown-item" href="/cities/jobs-in-bizerte/">emploi à Bizerte </a>
+                    <a class="dropdown-item" href="/cities/jobs-in-mahdia/">emploi à Mahdia </a>
+                   
+                    <a class="dropdown-item" href="/cities/jobs-in-kairouan/">emplpi à Kairouan </a>
+                    <a class="dropdown-item" href="/cities/jobs-in-grombalia/">emploi à nabel </a>
+                    
+                    
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="./login/login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="./signup/signup.html"> Signup</a>
+                  </li>
+             
+    
+              
+              </ul>
+            </div>
+          </nav>
+
+    <table width="800" border-reduce="0" cellspacing="0" cellpadding="0" align="center">
+    <td>
+        
+       
+    <h1> 
+           
+             <b>Inscription Candidat </b>
+    
+    </h1><div style="text-align: center;">                  
+<span id="error_message" style="align:center" class="text-danger">
+  
+</span> 
+   </div>
+     <form method="post" action="/fo/Fr/global.php?menu=6&amp;page=11" name="frm_candidat_inscription" id="frm_candidat_inscription">
+        
+                        <p></p>
+      
+
+                  
+                 <label>Nationalité</label> <font color="#ff3300">*</font> 
+                     <select name="TxtNatio" id="TxtNatio" class="form-control" onchange="verif_tun()">
+                       <option selected="" value="0">choix 
+                       de la nationalité</option>
+                       <option value="1">Tunisienne</option>
+                       <option value="2">Autre</option>
+                     </select>
+                     
+                      <br>
+              
+                     <label>CIN :</label> <font color="#ff3300">*</font> 
+                     <input name="TxtCin" type="text" class="form-control" id="TxtCin" value="" onblur="verifajax_cin(this.value);" size="15" maxlength="8">
+            <div id="zonetraitementcin" class="rouge10n" valign="center"></div><br>
+                 <label>Confirmation&nbsp;CIN :</label> <font color="#ff3300">*</font> 
+                     <input name="TxtCin2" type="text" class="form-control" id="TxtCin2" value="" size="15" maxlength="8">
+                    <br>
+                
+                              <label>Nom :</label> <font color="#ff3300">*</font> 
+                     <input name="TxtNom" type="text" class="form-control" id="TxtNom" value="" size="20">
+                     <br>
+                 
+                 <label>Prénom :</label> <font color="#ff3300">*</font>
+                     <input name="TxtPrenom" type="text" class="form-control" id="TxtPrenom" value="" size="30">
+                     <br>
+             
+                  <label>Genre :</label> <font color="#ff3300">*</font>
+                  <select name="TxtGenre" id="TxtGenre" class="form-control" value="">
+                     <option selected="" value="0">choix 
+                     du genre</option>
+                     <option value="1">Masculin</option>
+                     <option value="2">Féminin</option>
+                   </select> <br> 
+                
+                 <label>Date naissance :</label>  <font color="#ff3300">*</font> <font size="-2" color="#ff3300"> 
+                   (jj/mm/aaaa)</font>
+<input name="dnaiss" id="dnaiss" type="text" class="form-control" value=""> <br>                   
+<!--<IMG id=calgif  onclick='showCalendar(this, document.getElementById("dnaiss"), "dd/mm/yyyy",null,1,-1,-1)'   src="/fo/Fr/dynamique/js/popcalendar.gif"> -->
+                  
+                
+               <label>Adresse :</label>  <font color="#ff3300">*</font>
+                     <input name="TxtAdresse" type="text" class="form-control" id="TxtAdresse" value="" size="40">
+                   <br>
+                
+                  <label>Code postal :</label>  <font color="#ff3300">*</font>
+                     <input name="TxtCp" type="text" class="form-control" id="TxtCp" value="" size="4">
+                   <br>
+               
+                 <label>Localité :</label> 
+                 <textarea name="TxtLocal" cols="40" rows="2" class="form-control" id="TxtLocal"></textarea>  
+                 <br>             
+              
+                 <label>Gouvernorat :</label>  <font color="#ff3300">*</font>
+                 <select class="form-control" name="TxtGouv" id="TxtGouv" size="1" value="">
+                     <option value="0">Sélectionner une ville</option>
+                     <option value="TUNIS">TUNIS</option><option value="ARIANA">ARIANA</option><option value="BEN AROUS">BEN AROUS</option><option value="MANOUBA">MANOUBA</option><option value="NABEUL">NABEUL</option><option value="ZAGHOUAN">ZAGHOUAN</option><option value="BIZERTE">BIZERTE</option><option value="BEJA">BEJA</option><option value="JENDOUBA">JENDOUBA</option><option value="KEF">KEF</option><option value="SILIANA">SILIANA</option><option value="KAIROUAN">KAIROUAN</option><option value="KASSERINE">KASSERINE</option><option value="SIDI BOUZID">SIDI BOUZID</option><option value="SOUSSE">SOUSSE</option><option value="MONASTIR">MONASTIR</option><option value="MAHDIA">MAHDIA</option><option value="SFAX">SFAX</option><option value="GAFSA">GAFSA</option><option value="TOZEUR">TOZEUR</option><option value="KEBILI">KEBILI</option><option value="GABES">GABES</option><option value="MEDNINE">MEDNINE</option><option value="TATAOUINE">TATAOUINE</option>                    </select>
+                   <input name="box1" id="box1" type="text" value="" style="border:0px ;">
+                   <br>
+               
+                 <label>Téléphone : </label>   <font color="#ff3300">*</font> <font color="#ff3300" size="-2">(exp : 71999999) <br>
+                     </font>
+                     <input name="TxtTel" type="text" class="form-control" id="TxtTel" value="" size="15" required="required">
+                            <br>
+             
+                 <label>E-mail :</label>  <font color="#ff3300">*</font><font size="-1" color="#0080ff"> ( Votre email sera utilisé comme login )</font>
+                     <input name="TxtMail" type="text" class="form-control" id="TxtMail" value="" onblur="verifajax_mail(this.value);" size="30" required="" onchange="affect_login()">
+                     <div id="zonetraitementmail" class="rouge10n" valign="center"></div><br>
+                    
+                   <input name="login_" id="login_" type="hidden" class="form-control" size="15" value="">
+         <!--<div id="zonetraitementlogin"  class="rouge10n" valign="center"></div>-->
+                  <br>
+                  
+                 <label>Mot de passe : </label><font color="#ff3300"> *</font> <font size="-1" color="#ff3300">(Utilisez au moins 6 caractères)</font>
+                     <input name="motpasse_" id="motpasse_" type="password" class="form-control" size="15" value="" onblur="verifajax_pwd(this.value)">
+                     <div id="zonetraitementpwd" class="rouge10n" valign="center"></div> <br>
+                     <input name="vpasse2" type="hidden" class="form-control" size="15" disabled="">
+                
+                 
+                 <label>Confirmation mot de passe : </label><font color="#ff3300"> *</font>
+                 <input name="Motpasse2" type="password" class="form-control" id="Motpasse2" size="15" value="">
+                 <br> 
+        
+        <fieldset class="scheduler-border">
+ <legend class="scheduler-border">Votre Profil :</legend>
+        <br>
+                 <label>Niveau : </label><font color="#ff3300"> *</font>
+                 <select class="form-control" name="TxtNiv" id="TxtNiv" size="1">
+                         <option value="0">Sélectionner le niveau</option>
+                         <option value="13 ">LICENCE - MAITRISE                           </option><option value="12 ">TECHNICIEN SUPERIEUR, B.T.S                  </option><option value="11 ">PREMIER CYCLE UNIVERSITAIRE                  </option><option value="17 ">INGENIEUR                                    </option><option value="21 ">MASTERE, D.E.A, DOCTORAT                     </option><option value="18 ">ARCHITECTE                                   </option><option value="15 ">MEDECIN, PHARMACIEN, MEDECIN DENTAIRE        </option><option value="14 ">DIP NAT: ART&amp;METIERS, ART&amp;DESIGN, AUDIOVISUEL</option><option value="88 ">AUTRES DIPLOMES                              </option><option value="90 ">BAC ET PLUS SANS DIPLOME                     </option><option value="91 ">SECONDAIRE, B.T.P                            </option><option value="92 ">ECOLE DE BASE, C.A.P, APPRENTI               </option><option value="99 ">SANS DIPLOME                                 </option><option value="-1 ">NON INDIQUEE                                 </option>                        </select>
+<input name="var_niv" type="hidden" id="var_post" value="">
+                 
+                  <br>
+                  <label>Expérimenté : </label>
+                  <input name="Exprimenter" id="Exprimenter" onclick="javascript : varexp=1;" type="radio" value="1"> 
+                  <font class="noi12n"> Oui &nbsp; </font>
+                  
+                  <input name="Exprimenter" id="Exprimenter" onclick="javascript :varexp=1;" type="radio" value="2" checked="checked">	
+                         <font class="noi11n"> Non </font>  
+            <input name="var_exp" type="hidden" id="var_post2" value="">
+                  <br> 
+                  <br>
+                  <label>Domaine :</label><font color="#ff3300"> *</font>
+                  <select name="TxtDom" id="TxtDom" size="1" class="form-control">
+                       <option value="0">Sélectionner domaine</option>
+                       <option value="01">Petits métiers et artisanat                                                     </option><option value="02">Agriculture, Pêche, Production animale                                          </option><option value="03">Agroalimentaire                                                                 </option><option value="04">Culture, Spectacles, Mode, Beaux arts                                           </option><option value="06">Comptabilité, Audit, conseil                                                    </option><option value="07">Architecture, Génie civil, Bâtiment, Hydraulique                                </option><option value="08">Biologie, pharmacie                                                             </option><option value="09">Bois, Ameublement                                                               </option><option value="10">Commerce,  Vente, Publicité, Marketing                                          </option><option value="12">Cuir, Chaussures                                                                </option><option value="13">Droit, Juridique                                                                </option><option value="15">Edition, Arts et graphiques                                                     </option><option value="16">Electricité, Electronique, Electromécanique                                     </option><option value="17">Enseignement, Formation                                                         </option><option value="18">Esthétique, Coiffure                                                            </option><option value="19">Economie, Gestion, Finances                                                     </option><option value="20">Sciences humaines et sociales                                                   </option><option value="21">Hôtellerie, Restauration, Tourisme                                              </option><option value="22">Informatique, Télécom, Multimedia                                               </option><option value="23">Langues, Traduction, Lettres                                                    </option><option value="24">Mathématiques,  Statistiques                                                    </option><option value="25">Médias, Audiovisuel, Communication, Documentation                               </option><option value="26">Energétique, Génie industriel                                                   </option><option value="27">Santé : Médical, Paramédical, Vétérinaire, Hygiène                              </option><option value="29">Secrétariat                                                                     </option><option value="30">Sécurité, Gardiennage, Services à domicile                                      </option><option value="31">Services Sociaux, Animation jeunesse et enfance, Sports et loisirs              </option><option value="34">Téléopérateurs, Télémarketing, Télévente                                        </option><option value="35">Textile, Habillement                                                            </option><option value="36">Transport, Logistique, Manutention                                              </option><option value="37">Mécanique, Maintenance, Soudure                                                 </option><option value="38">Sciences : Géologie, Physique, Chimie                                           </option><option value="99">Autres                                                                          </option><option value="32">Services aux personnes et aides à domicile                                      </option> 
+                     </select>
+                  <br>
+    </fieldset> 
+             <br>
+            
+       <label>Je désire recevoir par email les offres correspondantes :</label>
+     <input name="Recevoir" id="Recevoir" type="radio" value="1" onclick="varrcv=1;">
+     <font class="noi12n"> Oui &nbsp; </font>
+     <input name="Recevoir" id="Recevoir" type="radio" value="2" checked="checked" onclick="document.getElementById('TxtMail').value=''; varrcv=1;">
+                  <font class="noi12n"> Non </font>
+                  <br>
+                  <br>
+       <!--           <p>Veuillez s&eacute;lectionner 
+                   une question et saisir une r&eacute;ponse qui vous aidera, 
+                   en cas d'oubli, &agrave; retrouver votre mot de passe.</p>
+           
+                <label>Question : </label><font color=#ff3300> *</font>
+                  
+                 <select class="form-control" name="Txtquestion" id= "Txtquestion" size="1" value="">
+                     <option value="0">S&eacute;lectionner question</option> -->
+                                         
+                    <br> 
+                
+            <!--     <label>R&eacute;ponse : </label> <font color=#ff3300> *</font>
+                   
+                 
+                     <input name="TxtReponse" type="text" class="form-control" id="TxtReponse" value=""  size="30" > -->
+                   <br>
+                 
+                               
+                     
+                       <br><br>
+                
+               
+                         
+                   <div class="form-group" align="center">
+             <input type="submit" name="valider" id="valider" class="btn btn-info W-50" value="Valider" onclick="return verifier();">
+           </div>
+               
+       
+               
+       <p><font color="#ff3300" size="-2">Les champs suivis d'une * sont obligatoires</font></p>
+      
+   
+
+             </form>
+</td>
+    </table>
+</body>
+</html>

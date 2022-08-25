@@ -1,0 +1,21 @@
+.form__modal {
+    background: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    margin: 60px auto 80px;
+    max-width: 510px;
+}
+.form__modal {
+    margin: 15px auto 35px;
+}
+p {
+    margin: 0 0 10px;
+}
+#navbar{
+    background-color: #021333 !important;
+    text-emphasis-color: white !important;
+}
+
+.logo{
+    width: 100px;
+}

@@ -1,29 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="C:\Users\IMEN\Desktop\jobSearch\css\login.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <section class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <img src="C:\Users\IMEN\Desktop\jobSearch\image\job-search-activities.jpg" class="image" alt="">
-                </div>
-                <div class="col-lg-7">
-     <form name="loginForm" onsubmit="return validateForm(event) ">
-        <label for="Name">Name:</label>
-        <input type="text" name="name" placeholder="example@example.com" />
-        <label for="password">Password:</label>
-        <input type="password" name="password" placeholder="*********" />
-        <button type="submit">Login</button>
-        <button type="reset">cancel</button>
-     </form>
-    </section>
+<body> <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <a class="navbar-brand" href="#nav-link"> 
+                <img class="logo" src="C:\Users\IMEN\Desktop\jobSearch\image\dream job.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    emploi par ville 
+                  </a>
+                  
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/cities/jobs-in-tunis/">emploi à Tunis</a>
+                    
+                    <a class="dropdown-item" href="/cities/jobs-in-sfax/">emploi à Sfax </a>
+                    <a class="dropdown-item" href="/cities/jobs-in-monastir/"> emploi à Monastir</a>
+                    <a class="dropdown-item" href="/cities/jobs-in-bizerte/">emploi à Bizerte </a>
+                    <a class="dropdown-item" href="/cities/jobs-in-mahdia/">emploi à Mahdia </a>
+                   
+                    <a class="dropdown-item" href="/cities/jobs-in-kairouan/">emplpi à Kairouan </a>
+                    <a class="dropdown-item" href="/cities/jobs-in-grombalia/">emploi à nabel </a>
+                    
+                    
+                  </div>
+                
+    
+              
+              </ul>
+            </div>
+          </nav>
+    <div class="container">  
 
+    <div class="container  content-card ">
+    <div class="col-md-6">
+    <div class="left-section-wrp loginpage">
+    <h1 class="col-md-12">Connexion</h1>
+    <form class="form " action="https://www.tanitjobs.com/login/" method="post" id="login-form" novalidate="">
+    <input type="hidden" name="return_url" value="">
+    <input type="hidden" name="action" value="login">
+    <div class="form-group">
+    <label class="form-label">e-Mail: </label>
+    <input type="email" name="username" class="form-control" placeholder="Email">
+    </div>
+    <div class="form-group">
+    <label class="form-label">password: </label>
+    <input type="password" name="password" class="form-control" placeholder="Mot de Passe">
+    </div>
+    <table width="100%">
+    <tbody><tr valign="middle">
+    <td><div class="form-group form-group__btns" style="margin-bottom:0">
+    <input type="submit" value="Connexion" class="btn btn__orange btn__bold" id="bouton-con">
+    </div></td>
+    <td><span class="or-join">ou &nbsp;</span><a id="clic" href="../signup/signup.html">Rejoignez-nous</a></td>
+    
+    </tr>
+    </tbody></table>
+    
+    </form>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <div class="connexion-social text-center " id="information" style="    padding-top: 50px;">
+    <h3> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Se connecter via les réseaux sociaux </h3>
+    </div>
+    <div class="social-registration">
+    <span class="social-registration__buttons">
+    <a href="https://www.facebook.com/profile.php?id=100085098905258" class="social-registration__linkedin" title="Connexion avec LinkedIn">
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=100085098905258" class="social-registration__facebook" title="Sign in with Facebook">
+    Sign in with Facebook
+     </a>
+    </span>
+    </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+</div>
     
 </body>
 </html>
