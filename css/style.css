@@ -33,7 +33,8 @@ body{
 } 
 
 .inspiration{
-    justify-content:space-between;
+    justify-content:center;
+    margin:30px;
 }
 .col-4{
     font-family: monospace;
@@ -56,7 +57,7 @@ a{
     color: #fff !important;
 }
 .txt{
-    font-family: Didot, serif;
+    font-family:font-weight;
     color:#021333;
     justify-items: center;
     justify-content: space-around;
@@ -67,13 +68,15 @@ a{
     
 
 }
-.col-4{
+#col4{
     justify-items: center;
     justify-content: space-around;
     align-items: center;
     align-content: center !important;
     text-align: center;
-    
+    align-content: center;
+    justify-self: center;
+   
 }
 .row{
     justify-content: space-between;
@@ -99,4 +102,13 @@ p {
 .myspace{
     text-align: center;
     font-family : Arial Narrow, sans-serif;
+}
+.form__modal{
+    background-color: #fff;
+    border: 1px solid #D0D0D0;
+    padding: 20px 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+     padding: 15px;
 }
